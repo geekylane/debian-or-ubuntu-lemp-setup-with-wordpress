@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #Specify the appropriate values to variables
-WORDPRESS_ROOT_PASSWORD=
-WORDPRESS_DB_NAME=
-WORDPRESS_USER=
-WORDPRESS_USER_PASSWORD=
-WEBSITE_NAME=
-WEBSITE_NAME_WITH_WWW=
-EMAIL=
+WORDPRESS_ROOT_PASSWORD=password
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_USER=wordpressuser
+WORDPRESS_USER_PASSWORD=password
+WEBSITE_NAME=techoo.xyz
+WEBSITE_NAME_WITH_WWW=www.techoo.xyz
+EMAIL=ashishjullia19@gmail.com
 #If you want, you can change the values for the variables below
 CLIENT_MAX_BODY_SIZE_NGINX="client_max_body_size 256M;"
 UPLOAD_MAX_FILESIZE_PHP="upload_max_filesize = 256M"
