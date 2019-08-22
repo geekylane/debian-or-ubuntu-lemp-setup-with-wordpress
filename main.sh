@@ -74,9 +74,11 @@ sudo sed -i.bak -e '/AUTH_KEY/d' -e '/SECURE_AUTH_KEY/d' -e '/LOGGED_IN_KEY/d' -
 sudo rm /var/www/html/wp_keys
 
 #Setting up SSL for the domain
+sudo add-apt-repository universe -y
+sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:certbot/certbot -y
 sudo apt update -y
 sudo apt install -y certbot
 sudo apt install -y certbot python-certbot-nginx
 sudo sed -i "s|server_name|server_name $WEBSITE_NAME $WEBSITE_NAME_WITH_WWW;|g" /etc/nginx/sites-available/website
-sudo certbot --nginx --noninteractive --agree-tos -m ${EMAIL} -d ${WEBSITE_NAME} -d ${WEBSITE_NAME_WITH_WWW}
+sudo certbot --nginx --noninteractive --redirect --agree-tos --no-eff-email -m ${EMAIL} -d ${WEBSITE_NAME} -d ${WEBSITE_NAME_WITH_WWW}
