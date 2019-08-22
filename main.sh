@@ -14,7 +14,7 @@ UPLOAD_MAX_FILESIZE_PHP="upload_max_filesize = 256M"
 POST_MAX_SIZE_PHP="post_max_size = 256M"
 
 #Install nginx and mysql-server
-sudo apt update -y & sudo apt install -y nginx && sudo apt install -y mysql-server
+sudo apt update -y && sudo apt install -y nginx && sudo apt install -y mysql-server
 
 #Setting up the mysql
 sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '$WORDPRESS_ROOT_PASSWORD';"
