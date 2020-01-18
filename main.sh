@@ -7,7 +7,7 @@ WORDPRESS_USER=wordpressuser
 WORDPRESS_USER_PASSWORD=password
 WEBSITE_NAME=example.com
 WEBSITE_NAME_WITH_WWW=www.example.com
-EMAIL=your_email_i
+EMAIL=your_email_id
 #If you want, you can change the values for the variables below
 CLIENT_MAX_BODY_SIZE_NGINX="client_max_body_size 256M;"
 UPLOAD_MAX_FILESIZE_PHP="upload_max_filesize = 256M"
